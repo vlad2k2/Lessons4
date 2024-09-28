@@ -53,7 +53,7 @@ public class Lesson4Program {
         System.out.printf("Product No %d: %s,\n" +
                 "total sales for %d days is EUR %.2f,\n" +
                 "sales by day is EUR %.2f.\n",++productNo, product, day,
-                totalSales, daySales);
+                (float)totalSales, daySales);
 
         // зміні продукт 2
         product = "laptop";
@@ -61,7 +61,7 @@ public class Lesson4Program {
         price = 749.06;
         day = 7;
         numberDay = 2;
-        //daySales = numberDay * price;
+        daySales = numberDay * price;
         //numberDay = daySales / price;
         //totalSales = 12153.41;
         totalSales = day * price * numberDay;
